@@ -1,0 +1,208 @@
+﻿body {
+    overflow-x:hidden;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+width:100%;
+max-width:100%;
+}
+h1 {
+    font-size:90px;
+}
+.ContentSec{
+    margin:auto;
+    width:80%;
+}
+.container {
+    padding-left:0;
+    padding-right:0;
+}
+.parallax-mirror{
+    z-index:500;
+
+}
+.parallax-window {
+    min-height: 400px;
+    background: transparent;
+    
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.parallax-window {
+    min-height: 1000px;
+    z-index:500;
+}
+.fullsize{
+    z-index:3;
+    padding-top:100px;
+    min-height:100vh;
+}
+ul{
+    list-style:none;
+}
+li{
+    display:block;
+    float:left;
+    margin-left:10px;
+}
+a{
+text-decoration:none;
+color:gainsboro;
+}
+.menu{
+    border-radius:0;
+}
+.menu ul{
+    padding:0;
+    margin-left:0;
+}
+.menu a{
+    color:black;
+    font-size:18px;
+
+}
+#controls{
+    position: relative;
+    height: 200px;
+    background-color: #f6f6f7;
+    overflow: hidden;
+}
+#footerLogo{
+    min-height:100%;
+    padding:0;
+    margin:0;
+}
+#copyrights {
+    margin-top:90px;
+    margin-bottom:30px;
+}
+#copyrightlinks{
+    font-size:10px;
+    
+}
+.form-control { display: inline-block !important; }
+.navbar-brand {
+    
+    margin-top:15px;
+    margin-left:15px;
+    background-image:url("Images/logo_samsung-galaxy.png");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+    width:200px;
+}
+.menu {
+    width:100%;
+    position:absolute;
+    transition: ease-in-out 1s;
+    background-color:rgba(242, 242, 242, 0.95);
+}
+.menu ul, .menu li {
+padding-left:0;
+padding-right:30px;
+}
+.navbar-fixed-top{
+    position:fixed;
+    transition:ease-in-out 5s;
+
+}
+#mainHeader {
+    position:absolute;
+
+}
+.watch{
+    position:absolute;
+        height:550px;
+        z-index:2;
+}
+#watch1{
+    z-index:5;
+    top:0;
+    left:-100px;
+    background-color:transparent;
+}
+#watch2{
+    z-index:-1000;
+    top:250px;
+    left:40%;
+     background-color:transparent;
+}
+  .bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .bottom-align-text  h1{
+      font-size:18px;
+  }
+  #mainpictureText img{
+      max-width:500px;
+  }
+  #mainpictureText p {
+      font-size:26px;
+      font-weight:600;
+  }
+
+  /*General classes*/
+  .padding-top10{
+      padding-top:10px;
+  }
+    .padding-top40{
+      padding-top:50px;
+  }
+      .padding-top100{
+      padding-top:100px;
+  }
+#sec2p1{
+    background-color:black;
+    z-index:5;
+    color:white;
+    min-height:100vh;
+    padding-top:50px;
+    padding-bottom:550px;
+}
+strong{
+        font-size:30px;
+        margin-bottom:50px;
+}
+#sec2p1 p {
+    margin-top:50px;
+    font-size:20px;
+}
+#BlackParralax{
+    margin:auto;
+    width:80%;
+    min-height:600px;
+}
+.circlelink {
+    display:block;
+height:50px;
+width:50px;
+    background-image: url('Images/gear-s3_btn_plus_b.png');
+    background-repeat:no-repeat;
+    background-size:contain;
+}
+#BlackWatch {
+
+
+    position:absolute;
+    width:50%;
+left:25%;
+top:50%;
+}
+.scrolling{
+    z-index:2;
+}

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+            @Scripts.Render("~/bundles/modernizr")
+        <link href="~/Content/font-awesome-4.6.3/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="navbar" id="mainHeader">
+        <div class="">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand"> </a>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <div class="row">
+                <div class="col-md-3" style="font-size:20px;">
+                    <strong style="float:left; color:gainsboro;">Share</strong> 
+                    <ul>
+                        <li>
+                            <a href="bla"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="bla"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="bla"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="bla"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <div class="col-md-9 text-right">
+                    
+                        <form class="form-inline">
+                            <select class="form-control">
+                                <option selected disabled>My Network speed</option>
+                                <option>Low bandwith Mode</option>
+                                <option>High bandwith Mode</option>
+
+                            </select>
+                            <button class="btn btn-default">Site map     ></button>
+                            <button class="btn btn-default">Global Samsung     ></button>
+                        </form>
+                    
+                </div>
+            </div>
+            <div class="row" id="copyrights">
+                
+                    <div class="col-md-1" id="footerLogo">
+                        <img src="~/Content/Images/Samsung_Logo.svg.png" class="img-responsive" />
+                    </div>
+                    <div class="col-md-6">
+                        ALL CONTENTS COPYRIGHT © SAMSUNG ELECTRONICS CO., LTD.
+                        <div id="copyrightlinks">
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                            <a href="http://www.samsungmobilepress.com/" target="_blank" title="Open in a new window to go to samsungmobilepress.com" class="c_txt-type8">SAMSUNGMOBILEPRESS.COM</a>
+                        </div>
+                    </div>
+                
+                <div class="col-md-5">
+                    <div class="col-md-3 pull-right">
+                        <a href="#">Go to top <i class="fa fa-arrow-circle-up" aria-hidden="true"></i></a>
+                    </div>
+                    <div class="col-md-3 pull-right">
+                        <a href="#">Show more <i class="fa fa-arrow-circle-down" aria-hidden="true"></i></a>
+</div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <script src="~/Scripts/CommonScripts.js"></script>
+    <script src="~/Scripts/parallax.js-1.4.2/parallax.min.js"></script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>
