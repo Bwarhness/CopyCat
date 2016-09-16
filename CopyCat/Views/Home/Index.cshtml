@@ -5,17 +5,17 @@
 <div class="col-md-12 fullsize">
     <div>
         <figure>
-            
-            <img src="~/Content/Images/gear-s3_highlights_kv_cl_l.png"  class="watch" id="watch1"/>
+
+            <img src="~/Content/Images/gear-s3_highlights_kv_cl_l.png" class="watch" id="watch1" />
         </figure>
         <figure>
-            <img src="~/Content/Images/gear-s3_highlights_kv_ft_l.jpg" class="watch" id="watch2"/>
-            
+            <img src="~/Content/Images/gear-s3_highlights_kv_ft_l.jpg" class="watch" id="watch2" />
+
         </figure>
         <div class="bottom-align-text" style="z-index:10;" id="mainpictureText">
             <h1>
                 <img src="~/Content/Images/gear-s3_highlights_kv_logo.jpg" />
-                
+
 
             </h1>
             <p>Timeless outside. Revolutionary inside.</p>
@@ -27,16 +27,16 @@
         <h2 style="display:none;">Gear S3</h2>
         <ul>
             <li>
-                <a href="#">Highlights</> </a>
+                @Html.ActionLink("Highlights","Index")
             </li>
             <li>
-                <a href="#">Design</> </a>
+                @Html.ActionLink("Design", "Design")
             </li>
             <li>
-                <a href="#">Experience</> </a>
+                @Html.ActionLink("Experience", "Experience")
             </li>
             <li>
-                <a href="#">Performance</> </a>
+                @Html.ActionLink("Performance", "Performance")
             </li>
         </ul>
     </div>
@@ -52,11 +52,11 @@
             </strong>
             <p>*Bluetooth model requires Wi-Fi connection and a voice call app for phone-free calls.</p>
         </div>
+
         <figure id="BlackWatch" class="scrolling">
 
-            <img src="~/Content/Images/gear-s3_highlights_overview.jpg" class="img-responsive scrolling"; id="" />
+            <img src="~/Content/Images/gear-s3_highlights_overview.jpg" class="img-responsive scrolling" ; id="" />
         </figure>
-        
         @*<div class="parallax-window" data-parallax="scroll" data-image-src="/Content/Images/gear-s3_highlights_overview.jpg" style="width:500px; margin:auto;"></div>*@
     </div>
 
@@ -66,78 +66,108 @@
 <div class="fullsize">
     <div class="text-center">
         <h1>Design</h1>
-        <strong class="ContentSec">The Gear S3 looks and feels natural on your wrist and when you use it. Like a traditional watch. Only much more capable.</strong>
-    <a href="~/Views/Home/Design.cshtml" class="circlelink">s</a>
+        <strong class="main_desc">The Gear S3 looks and feels natural on your wrist and when you use it. Like a traditional watch. Only much more capable.</strong>
+        
+    </div>
+    <div class="ContentSec">
+        <div class="col-md-12  margin-bottom20p ">
+            <div class="row">
+                <div class="padding-top20p col-md-4 middle">
+                    <div class="vertical-center-row ">
+                        <strong class="con_desc" style="display: block;
+    margin-bottom: 27px;
+    font-size: 40px;
+    color: #000;">Gear S3 frontier</strong>
+                        <p class="desc">Built for a pioneering spirit, to take adventures as they come.</p>
+                    </div>
+
+                </div>
+                <div class="col-md-8">
+                    <img class="img-responsive absolute"  id="gs3f"src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3-highlights_design_ft.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 margin-bottom40p ">
+            <div class="row ">
+
+                <div class="col-md-8">
+                    <img class="img-responsive absolute" id="gs3c"  src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3-highlights_design_cl.png" />
+                </div>
+                <div class="padding-top20p col-md-4">
+                    <strong class="con_desc" style="display: block;
+    margin-bottom: 27px;
+    font-size: 40px;
+    color: #000;">Gear S3 classic</strong>
+                    <p class="desc">A forward-thinking choice that offers a touch of luxury.</p>
+
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.  microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
 
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.  microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
+<div class="fullsize black padding-top100" >
+    <div class="ContentSec text-center">
+        <h1>Experience</h1>
+        <strong class="main_desc">The Gear S3 sets you free from your phone in the most natural way. You only have to turn the bezel to respond to calls, to read messages, to go to that app you need.</strong>
+        <div class="padding-top20p">
+            <a href="@Url.Action("Experience")" style=""> <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i> </a>
+        </div>
+        <h1>Just twist the bezel</h1>
+        <p class="con_desc">Answer a call, turn up the volume or turn off the alarm. Turn the bezel to scroll through apps, messages and long text. It couldn't be easier to do what you want, to get to what you want.</p>
+        <img class="img-responsive" src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_experience.png" style="margin:auto; border-radius:50%;" />
+        <div class="padding-top100">
+            <h1>Make calls freely</h1>
+            <p class="con_desc ">You don't need your phone with you. The Gear S3 has a built-in speaker that lets you make or take calls right away on the device.</p>
+            <p class="con_desc  padding-top40">*Bluetooth model requires Wi-Fi connection and a voice call app for phone-free calls.</p>
+        </div>
+        
+        <img src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_freely.jpg" class="img-responsive" />
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.  microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+<div class="fullsize text-center" style="padding-top:0;">
+    <div>
+        <div style="height:800px; position:relative; ">
+            <img src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_waterproof_bg.jpg" class="absolute img-responsive"  />
 
+            <img class="img-responsive absolute" id="WaterWatch"style="margin:auto; left:20%; top:-7%;" src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_waterproof.png" />
+            <img  id="Water"style="margin:auto; left:0%; top:-5%;" src="http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_waterproof_water.png" class="absolute"/>
+        </div>
+
+    </div>
+    <div class="ContentSec padding-top100 text-center">
+        <h1>Performance</h1>
+        <strong class="main_desc">
+            Go for a run, a round of golf, go exploring on your bike. Gear S3 has a built-in GPS that gives you the freedom
+            to explore and to stay on track even without your phone. And with its long-lasting battery, you only need to set it down for a charge every few days.
+        </strong>
+        <div class="padding-top20p" style="color:black;">
+            <a href="@Url.Action("Experience")" style=""> <i class="fa fa-angle-right fa-3x" aria-hidden="true"></i> </a>
+        </div>
+        <h1 class="padding-top20p">Stay on the map</h1>
+        <p class="con_desc ">Even without your phone, you can check the distance you've covered, the trail you need to take. You're able to track your progress from your daily runs to your golf score on the green. The GPS on the Gear S3 takes care of it all.</p>
+    </div>
+    <div class="Golf">
+
+    </div>
+
+    <div class="ContentSec text-center padding-top40" >
+        <h1>Go days without charging</h1>
+        <p class="con_desc ">
+            It's truly liberating to have a battery that lasts long enough for you to go on a trip without a charger.
+            *Battery life may vary depending on usage and settings.
+        </p>
+
+    </div>
+    <video class="img-responsive" src="http://www.samsung.com/global/galaxy/gear-s3/videos/gear-s3_highlights_charge.mp4"></video>
+</div>
 <div class="col-md-12" id="controls">
-    
+
 </div>
 
 @section scripts{
@@ -146,7 +176,10 @@
             imageSrc: '/Content/Images/gear-s3_highlights_overview.jpg',
             speed: 0.05
         });
-
+        $('.Golf').parallax({
+            imageSrc: 'http://www.samsung.com/global/galaxy/gear-s3/images/gear-s3_highlights_performance.jpg',
+            speed: 0.05
+        });
     </script>
-    
-    }
+
+}

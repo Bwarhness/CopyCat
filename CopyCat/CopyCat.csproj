@@ -241,7 +241,7 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Design.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\parallax.js-1.4.2\bower.json" />
     <Content Include="Scripts\parallax.js-1.4.2\LICENSE" />

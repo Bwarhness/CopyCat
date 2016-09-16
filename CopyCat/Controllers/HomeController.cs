@@ -13,7 +13,7 @@ namespace CopyCat.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Design()
         {
             ViewBag.Message = "Your application description page.";
 

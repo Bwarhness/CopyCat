@@ -1,32 +1,41 @@
 ﻿body {
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-width:100%;
-max-width:100%;
+    position:relative;
+    max-width: 1920px;
+}
+.navbar-fixed-top {
+    margin:auto;
+        position: fixed;
+    transition: ease-in-out 5s;
+}
+h2{
+    margin-top:0px;
 }
 h1 {
-    font-size:90px;
+    font-size: 110px;
+    margin: 30px;
 }
-.ContentSec{
-    margin:auto;
-    width:80%;
-}
-.container {
-    padding-left:0;
-    padding-right:0;
-}
-.parallax-mirror{
-    z-index:500;
 
+.ContentSec {
+    margin: auto;
+    width: 70%;
 }
-.parallax-window {
-    min-height: 400px;
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+.parallax-window, .Golf {
+    min-height: 700px;
     background: transparent;
-    
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -35,174 +44,249 @@ h1 {
 .dl-horizontal dt {
     white-space: normal;
 }
-
+#WatchRow img{
+    margin:auto;
+}
 /* Set width on the form input elements since they're 100% wide by default */
 input,
 select,
 textarea {
     max-width: 280px;
 }
-.parallax-window {
-    min-height: 1000px;
-    z-index:500;
+
+
+
+.fullsize {
+    padding-top:5%;
+    z-index: 3;
+    min-height: 100vh;
 }
-.fullsize{
-    z-index:3;
-    padding-top:100px;
-    min-height:100vh;
+
+ul {
+    list-style: none;
 }
-ul{
-    list-style:none;
-}
-li{
-    display:block;
-    float:left;
-    margin-left:10px;
-}
-a{
-text-decoration:none;
-color:gainsboro;
-}
-.menu{
-    border-radius:0;
-}
-.menu ul{
-    padding:0;
-    margin-left:0;
-}
-.menu a{
-    color:black;
-    font-size:18px;
+
+li {
+    display: block;
+    float: left;
 
 }
-#controls{
+
+a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+.menu {
+    background-color:rgba(255, 255, 255, 0.89);
+    padding-left:5%;
+    max-width:1920PX;
+    border-radius: 0;
+}
+
+    .menu ul {
+        padding: 0;
+        margin-left: 0;
+    }
+
+.padding-top20p {
+    padding-top: 20%;
+}
+
+.menu a {
+    color: black;
+    font-size: 18px;
+}
+
+#controls {
     position: relative;
     height: 200px;
     background-color: #f6f6f7;
     overflow: hidden;
 }
-#footerLogo{
-    min-height:100%;
-    padding:0;
-    margin:0;
+
+#footerLogo {
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
 }
+
 #copyrights {
-    margin-top:90px;
-    margin-bottom:30px;
+    margin-top: 90px;
+    margin-bottom: 30px;
 }
-#copyrightlinks{
-    font-size:10px;
-    
+
+#copyrightlinks {
+    font-size: 10px;
 }
-.form-control { display: inline-block !important; }
+
+.form-control {
+    display: inline-block !important;
+}
+
 .navbar-brand {
-    
-    margin-top:15px;
-    margin-left:15px;
-    background-image:url("Images/logo_samsung-galaxy.png");
-    background-size:100% 100%;
-    background-repeat:no-repeat;
-    width:200px;
+    margin-top: 15px;
+    margin-left: 15px;
+    background-image: url("Images/logo_samsung-galaxy.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 200px;
 }
-.menu {
-    width:100%;
-    position:absolute;
-    transition: ease-in-out 1s;
-    background-color:rgba(242, 242, 242, 0.95);
-}
-.menu ul, .menu li {
-padding-left:0;
-padding-right:30px;
-}
-.navbar-fixed-top{
-    position:fixed;
-    transition:ease-in-out 5s;
 
-}
+
+
+    .menu ul, .menu li {
+        padding-left: 0;
+        padding-right: 30px;
+    }
+
+
+
 #mainHeader {
-    position:absolute;
+    position: absolute;
+}
 
+.watch {
+    position: absolute;
+    height:55%;
+    z-index: 2;
 }
-.watch{
-    position:absolute;
-        height:550px;
-        z-index:2;
+
+#watch1 {
+    z-index: 5;
+    top: 0;
+    left: -5%;
+    background-color: transparent;
 }
-#watch1{
-    z-index:5;
-    top:0;
-    left:-100px;
-    background-color:transparent;
+
+#watch2 {
+    z-index: -1000;
+    bottom: 1%;
+    right:-5%;
+    background-color: transparent;
 }
-#watch2{
-    z-index:-1000;
-    top:250px;
-    left:40%;
-     background-color:transparent;
-}
-  .bottom-align-text {
+
+.bottom-align-text {
     position: absolute;
     bottom: 0;
     right: 0;
-  }
-  .bottom-align-text  h1{
-      font-size:18px;
-  }
-  #mainpictureText img{
-      max-width:500px;
-  }
-  #mainpictureText p {
-      font-size:26px;
-      font-weight:600;
-  }
-
-  /*General classes*/
-  .padding-top10{
-      padding-top:10px;
-  }
-    .padding-top40{
-      padding-top:50px;
-  }
-      .padding-top100{
-      padding-top:100px;
-  }
-#sec2p1{
-    background-color:black;
-    z-index:5;
-    color:white;
-    min-height:100vh;
-    padding-top:50px;
-    padding-bottom:550px;
 }
-strong{
-        font-size:30px;
-        margin-bottom:50px;
+
+    .bottom-align-text h1 {
+        font-size: 18px;
+    }
+
+#mainpictureText img {
+    max-width: 500px;
+}
+
+#mainpictureText p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+/*General classes*/
+.padding-top10 {
+    padding-top: 10px;
+}
+
+.padding-top40 {
+    padding-top: 50px;
+}
+
+.padding-top100 {
+    padding-top: 100px;
+}
+.margin-top10p {
+    margin-top:10%;
+}
+
+#sec2p1 {
+    background-color: black;
+    z-index: 5;
+    color: white;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 550px;
+}
+
+strong {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+.absolute {
+    z-index:-10;
+    position:absolute;
+}
+.margin-bottom20p {
+    margin-bottom:20%;
+}
+.margin-bottom40p {
+    margin-bottom:40%;
 }
 #sec2p1 p {
-    margin-top:50px;
-    font-size:20px;
+    margin-top: 50px;
+    font-size: 20px;
 }
-#BlackParralax{
-    margin:auto;
-    width:80%;
-    min-height:600px;
+
+#BlackParralax {
+    margin: auto;
+    width: 80%;
+    min-height: 600px;
 }
+
 .circlelink {
-    display:block;
-height:50px;
-width:50px;
+    margin:auto;
+    display: block;
+    height: 50px;
+    width: 50px;
     background-image: url('Images/gear-s3_btn_plus_b.png');
-    background-repeat:no-repeat;
-    background-size:contain;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
 #BlackWatch {
-
-
-    position:absolute;
-    width:50%;
-left:25%;
-top:50%;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 50%;
 }
-.scrolling{
-    z-index:2;
+
+.scrolling {
+    z-index: 2;
+}
+
+.con_desc {
+    max-width:1040px;
+    margin: 0 auto;
+    font-size: 23px;
+    line-height: 1.5;
+    font-family: 'SamsungOne400';
+}
+.main_desc {
+    max-width:70%;
+        display: block;
+    margin: 0 auto;
+    font-size: 33px;
+    line-height: 46px;
+
+}
+.desc {
+    font-size: 33px;
+    line-height: 46px;
+}
+
+.black {
+    background-color: black;
+    color: white;
+}
+
+.middle {
+    display: table;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
